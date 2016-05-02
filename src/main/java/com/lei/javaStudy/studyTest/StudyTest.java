@@ -6,7 +6,9 @@ import com.lei.javaStudy.bean.People;
  * Created by lenovo on 2016/5/2.
  */
 public class StudyTest {
-
+    /**
+     * 奇偶数判断
+     */
     public static void printParity(int x){
         if (x % 2 == 0 ){
             System.out.println("x is even!");
@@ -15,6 +17,9 @@ public class StudyTest {
         }
     }
 
+    /**
+     * return跳出循环
+     */
     public static void matchLog(){
 
         for (int i=5 ;i<=5; i--){
@@ -29,8 +34,22 @@ public class StudyTest {
 
     }
 
-    public static void main(String[] args) {
+    public static void nline(int n ){
+        if ( n >= 0 ){
+            for (int m=10 ; m >= 0 ;m--){
+                System.out.print("* ");
+            }
+    System.out.println();
+    nline(n-1);
+}
+    }
 
+
+
+    public static void main(String[] args) {
+        /**
+         * 打印正方形的形状
+         */
         System.out.println("---正方形----");
 
         for (int x = 1; x <= 100; x++) {
@@ -50,6 +69,7 @@ public class StudyTest {
         System.out.println("---Return测试2----");
         matchLog();
 
-
+        System.out.println("---递归测试----");
+        nline(10);
     }
 }
