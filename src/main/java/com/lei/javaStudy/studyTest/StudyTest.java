@@ -47,7 +47,9 @@ public class StudyTest {
         int number=19;
         printParity(number);
 
-        System.out.println("---Return测试----");
+        System.out.println("---Return测试2----");
         matchLog();
+
+
     }
 }
